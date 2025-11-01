@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS sizing units-px,rem,em,vh,vw,%</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        box-sizing: border-box;
+        border: 2px solid black;
+        /* width: 2048px; */
+        width: 80vw;
+        height: 10vh;
+        margin: auto;
+        background-color: aquamarine;
+      }
+      html {
+        font-size: 12px;
+      }
+      .container {
+        box-sizing: border-box;
+        border: 2px solid black;
+        /* width: 2048px; */
+        width: 80vw;
+        /* height: 80vh; */
+        min-height:80vh;/*adjust height automatically*/
+        margin: 23px auto;
+        font-size: 1em;
+        background-color: aquamarine;
+      }
+      .container p {
+        /* font-size: 2em; */
+        font-size: 2rem;
+        width: 50%;
+      }
+      .container p span {
+        border: 2px solid blue;
+        width: 50%;
+      }
+      .mycount {
+        box-sizing: border-box;
+        border: 2px solid black;
+        background-color: red;
+        color: yellow;
+        margin: 23px auto;
+        font-size: 22px;
+        /* width: 100vmin; */
+        width: 80vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">this is a box</div>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+        aliquid officia mollitia. Animi, doloribus. Illo corporis vel
+        accusantium dolores hic ut odio. Similique corporis hic nobis aliquam
+        vitae facilis temporibus consequuntur, vero debitis quod officia ad ab
+        ex, blanditiis molestias distinctio eos eligendi assumenda eveniet.
+        Laborum autem in aliquid iure soluta asperiores est, architecto cumque
+        quibusdam!
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          sequi repellendus consectetur similique. Quo cumque quidem ad nulla
+          consequuntur velit quis voluptatibus veritatis!</span>
+      </p>
+    </div>
+    <div class="mycount">I am another container</div>
+  </body>
+</html>
